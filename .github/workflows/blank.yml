@@ -24,8 +24,8 @@ jobs:
             - name: configure AWS Credentials
               uses: aws-actions/configure-aws-credentials@v3
               with:
-              aws-access-key: ${{AKIAWI4EI2WZ6K6RGZ4Z}}
-              aws-secret-key: ${{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}}
+              aws-access-key: ${{ secrets.AWS_ACCESS_KEY }}
+              aws-secret-key: ${{ secrets.AWS_SECRET_KEY }}
               aws-region: ${{ env.AWS_REGION_NAME }}
 
             - name:Copy to S3
@@ -41,8 +41,8 @@ jobs:
           - name: configure AWS Credentials
             uses: aws-actions/configure-aws-credentials@v3
             with:
-            aws-access-key: ${{AKIAWI4EI2WZ6K6RGZ4Z}}
-            aws-secret-key: ${{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}}
+            aws-access-key: ${{ secrets.AWS_ACCESS_KEY }}
+            aws-secret-key: ${{ secrets.AWS_SECRET_KEY }}
             aws-region: ${{ env.AWS_REGION_NAME }}
 
             - name: create new app
