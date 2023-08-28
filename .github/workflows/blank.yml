@@ -1,8 +1,8 @@
 name: CI/CD Pipeline for AWS Elastic Beanstalk
 env:
 EB_PACKAGE_S3_BUCKET_NAME: "sabagluebuket"
-EB_APPLICATION_NAME: "SABAH"
-EB_ENVIRONMENT_NAME: "-env"
+EB_APPLICATION_NAME: "saba"
+EB_ENVIRONMENT_NAME: "Saba-env"
 DEPLOY_PACKAGE_NAME: "PHP_SABAH_${{ github.sha }}.zip"
 AWS_REGION_NAME: "eu-central-1"
 on:
